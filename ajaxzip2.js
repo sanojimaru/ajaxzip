@@ -135,6 +135,8 @@ AjaxZip2.zip2addr = function ( azip1, apref, aaddr, azip2, astrt, aarea ) {
         // update http://www.kawa.net/works/ajax/ajaxzip2/ajaxzip2.html#com-2006-12-15T04:41:22Z
         if ( ! cursor ) return;
         if ( ! cursor.value ) return;
+        if ( ! cursor.type != 'text') return;
+
         var len = cursor.value.length;
         cursor.focus();
         if ( cursor.createTextRange ) {
